@@ -86,5 +86,3 @@ pricing strategy. Audit $11.39 Phone and $3,457 Tablet transactions for data qua
 ## Tools Used
 Power BI Desktop, DAX, Power Query
 
-## Data Source
-Cleaned e-commerce dataset - see Project 1: `E-Commerce-Data-Cleaning-Project` for cleaning steps.# E-Commerce-Sales-Customer-Behaviour-Analysis
