@@ -1,4 +1,4 @@
-# E-commerce Sales & Customer Behaviour Analysis - Power BI
+# E-commerce Sales & Customer Behaviour Analysis(EDA)- Power BI
 
 ## Executive Overview
 Analyzed 1,200 e-commerce orders totaling $1.26M revenue to identify sales drivers, customer behavior, and growth opportunities. Dashboard reveals strong digital adoption but exposure to high-value outliers.
@@ -58,8 +58,27 @@ Analyzed 1,200 e-commerce orders totaling $1.26M revenue to identify sales drive
 **DASHBOARD 
 <img width="570" height="322" alt="Image" src="https://github.com/user-attachments/assets/a2bb1e49-e9bd-4b75-a18b-355bfa4419ae" />
 
+### **Outlier & Price Distribution Analysis**
+Statistical review of `Avg TotalPrice` vs `Median TotalPrice` by Product revealed 
+significant right-skew in two categories:
+
+1. **Phone**: Mean $972.58 exceeds median $692.00 by **40.5%**. Indicates a small 
+   number of high-value transactions inflate the average. Low `MIN PRICE` of $11.39 
+   also suggests data entry anomalies or clearance SKUs.
+
+2. **Tablet**: Mean $1,042.28 exceeds median $787.00 by **32.4%**. `MAX PRICE` of 
+   $3,457 is the dataset high, confirming presence of premium-tier outliers.
+
+3. **Remaining Categories**: Chair, Desk, Laptop, Monitor, Printer show skew < 26%, 
+indicating stable, balanced pricing with fewer extreme transactions.
+
+**Business Impact**: Avg Price KPI is misleading for Phone/Tablet. Use Median for 
+pricing strategy. Audit $11.39 Phone and $3,457 Tablet transactions for data quality.
+
+<img width="608" height="346" alt="Image" src="https://github.com/user-attachments/assets/8035c41a-7656-425b-b110-9e7191c5f7ba" />
+
 ## Key Insights
-1. **Outlier Impact**: Max order $3.46K is 4x the median $824, skewing average. Median better represents typical customer.
+1. **Outlier Impact**: Mean-median skew analysis flags Phone (40.6%) and Tablet (32.4%) as high-skew categories, indicating premium transactions distort average pricing.
 2. **Marketing ROI**: Instagram drives highest revenue $275.29K vs Referral $226.82K. Shift budget accordingly.
 3. **Payment Trend**: Online + Credit Card = 47% of orders. Cash still 20.5% - consider incentives for digital.
 4. **2025 Dip**: Revenue dropped $0.55M → $0.40M. Investigate Q1-Q2 2025 seasonality or inventory issues.
