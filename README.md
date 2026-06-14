@@ -1,4 +1,4 @@
-# E-commerce Sales & Customer Behaviour Analysis(EDA)- Power BI
+# E-commerce Sales & Customer Behaviour Analysis(EDA)- Power BI DECODELAB(Project 2)
 
 ## Executive Overview
 Analyzed 1,200 e-commerce orders totaling $1.26M revenue to identify sales drivers, customer behavior, and growth opportunities. Dashboard reveals strong digital adoption but exposure to high-value outliers.
